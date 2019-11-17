@@ -3,7 +3,7 @@
 
 # monotonic-timestamp
 Monotonically increasing timestamp.  
-Since System.currentTimeMillis as ms, if you call it twice quickly, it's possible to get two identical time stamps.  
+Since `System.currentTimeMillis` as ms, if you call it twice quickly, it's possible to get two identical time stamps.  
 This class fixes the problem!  
   
 The Timestamp is so lightweight, you can create one Timestamp instance for each signal source.  
