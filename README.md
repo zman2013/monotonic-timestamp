@@ -7,7 +7,7 @@ Since `System.currentTimeMillis` as ms, if you call it twice quickly, it's possi
 This class fixes the problem!  
   
 The Timestamp is so lightweight, you can create one Timestamp instance for each signal source.  
-But you only has one signal source, just use the static method {@link #timestamp()} directly.  
+But you only has one signal source, just use the static method `Timestamp.timestamp()` directly.  
   
 Timestamp can generate 262144 unique timestamp in one milli-second.  
 Max valid timestamp:  Fri Dec 12 20:41:28 CST 3084  
