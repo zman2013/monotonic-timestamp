@@ -14,11 +14,11 @@ public class TimestampTest {
 
         long prev = 0;
         for(int i =0; i < 1_000_000; i ++ ){
-            long timestamp = Timestamp.timestamp();
+            long timestamp = Timestamp.uniq();
             if( prev >= timestamp ){
 
-                System.out.println(Timestamp.realTimestamp(prev));
-                System.out.println(Timestamp.realTimestamp(timestamp));
+                System.out.println(Timestamp.decode(prev));
+                System.out.println(Timestamp.decode(timestamp));
 
                 System.out.println(prev);
                 System.out.println(timestamp);
@@ -30,7 +30,7 @@ public class TimestampTest {
             prev = timestamp;
         }
 
-        Timestamp.realTimestamp(prev);
+        Timestamp.decode(prev);
     }
 
 }

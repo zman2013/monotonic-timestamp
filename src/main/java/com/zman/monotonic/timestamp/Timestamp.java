@@ -6,7 +6,7 @@ package com.zman.monotonic.timestamp;
  * This class fixes the problem!
  *
  * The Timestamp is so lightweight, you can create one Timestamp instance for each signal source.
- * But you only has one signal source, just use the static method {@link #timestamp()} directly.
+ * But you only has one signal source, just use the static method {@link #uniq()} directly.
  *
  * Timestamp can generate 262144 unique timestamp in one milli-second.
  * Max valid timestamp:  Fri Dec 12 20:41:28 CST 3084
@@ -46,7 +46,7 @@ public class Timestamp {
      * If you have multiple signal sources used by crossing threads, create one Timestamp instance for each signal source.
      * @return unique adjusted timestamp
      */
-    public static long timestamp(){
+    public static long uniq(){
         return instance.unique();
     }
 
@@ -55,7 +55,7 @@ public class Timestamp {
      * @param uniqueTimestamp   adjusted timestamp
      * @return real timestamp
      */
-    public static long realTimestamp(long uniqueTimestamp){
+    public static long decode(long uniqueTimestamp){
         return uniqueTimestamp >> 18;
     }
 

@@ -25,3 +25,12 @@ implementation "com.zmannotes:monotonic-timestamp:0.0.6"
     <version>0.0.5</version>
 </dependency>
 ```
+### How to use
+```java
+import com.zman.monotonic.timestamp.Timestamp;
+
+...
+
+long uniqueTimestamp = Timestamp.uniq();
+
+```
