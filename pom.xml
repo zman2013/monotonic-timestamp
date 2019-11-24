@@ -4,7 +4,7 @@
 
     <groupId>com.zmannotes</groupId>
     <artifactId>monotonic-timestamp</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8-SNAPSHOT</version>
 
     <name>monotonic timestamp library</name>
     <description>monotonic timestamp.</description>
@@ -31,7 +31,7 @@
         <connection>scm:git:git@github.com:zman2013/monotonic-timestamp.git</connection>
         <developerConnection>scm:git:git@github.com:zman2013/monotonic-timestamp.git</developerConnection>
         <url>https://github.com/zman2013/monotonic-timestamp</url>
-        <tag>monotonic-timestamp-0.0.7</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
