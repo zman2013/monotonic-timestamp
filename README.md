@@ -15,7 +15,7 @@ Max valid timestamp:  Fri Dec 12 20:41:28 CST 3084
 ## dependency
 ### gradle
 ```groovy
-implementation "com.zmannotes:monotonic-timestamp:0.0.5"
+implementation "com.zmannotes:monotonic-timestamp:0.0.6"
 ```
 ### maven
 ```xml
