@@ -27,6 +27,13 @@
         </developer>
     </developers>
 
+    <scm>
+        <connection>scm:git:git@github.com:zman2013/monotonic-timestamp.git</connection>
+        <developerConnection>scm:git:git@github.com:zman2013/monotonic-timestamp.git</developerConnection>
+        <url>https://github.com/zman2013/monotonic-timestamp</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <properties>
         <version.maven-release-plugin>2.5.3</version.maven-release-plugin>
         <version.maven-scm-provider-gitexe>1.9.5</version.maven-scm-provider-gitexe>
